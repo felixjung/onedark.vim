@@ -179,7 +179,7 @@ call s:h("Title", { "fg": s:green }) " titles for output from ":set all", ":auto
 call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) " Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 call s:h("WarningMsg", { "fg": s:red }) " warning messages
-call s:h("WildMenu", {}) " current match in 'wildmenu' completion
+call s:h("WildMenu", { "bg": s:gutter_fg_grey, "fg": s:green }}) " current match in 'wildmenu' completion
 
 " +--------------------------------+
 " | Language-Specific Highlighting |
