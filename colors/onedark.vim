@@ -70,7 +70,7 @@ let s:yellow = { "gui": "#E5C07B", "cterm": "180", "cterm16": "3" }
 let s:dark_yellow = { "gui": "#D19A66", "cterm": "173", "cterm16": "11" }
 
 let s:blue = { "gui": "#61AFEF", "cterm": "39", "cterm16": "4" } " Alternate cterm: 75
-"let s:dark_blue = { "gui": "#6097dc", "cterm": "32", "cterm16": "12" }
+let s:dark_blue = { "gui": "#6097dc", "cterm": "32", "cterm16": "12" }
 
 let s:purple = { "gui": "#C678DD", "cterm": "170", "cterm16": "5" } " Alternate cterm: 176
 "let s:dark_purple = { "gui": "#8d73de", "cterm": "55", "cterm16": "13" }
@@ -151,7 +151,7 @@ call s:h("VertSplit", { "fg": s:vertsplit }) " the column separating vertically 
 call s:h("Folded", {}) " line used for closed folds
 call s:h("FoldColumn", {}) " 'foldcolumn'
 call s:h("SignColumn", {}) " column where signs are displayed
-call s:h("IncSearch", { "fg": s:visual_black, "bg": s:visual_grey }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
+call s:h("IncSearch", { "fg": s:white, "bg": s:dark_blue }) " 'incsearch' highlighting; also used for the text replaced with ":s///c"
 call s:h("LineNr", { "fg": s:gutter_fg_grey, "bg": s:gutter_bg_grey }) " Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 call s:h("CursorLineNr", {}) " Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 call s:h("MatchParen", { "fg": s:blue, "gui": "underline" }) " The character under the cursor or just before it, if it is a paired bracket, and its match.
